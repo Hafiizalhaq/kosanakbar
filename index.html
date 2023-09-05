@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Uang Kas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Catatan Uang Kas</h1>
+        <div class="nama">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama">
+        </div>
+        <div class="input">
+            <label for="input">Masukkan nominal:</label>
+            <input type="number" id="jumlah" placeholder="Masukkan jumlah">
+            <button onclick="tambahPemasukan()">Tambah Pemasukan</button>
+            <button onclick="tambahPengeluaran()">Tambah Pengeluaran</button>
+        <div class="saldo">Saldo: <span id="saldo">Rp 0</span>
+        </div>
+        </div>
+        <div class="catatan">
+            <h2>Catatan Transaksi</h2>
+            <ul id="catatan-transaksi">
+                <!-- Daftar transaksi akan ditampilkan di sini -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
